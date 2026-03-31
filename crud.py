@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from models import Task
+from schema import Task
 from beanie import PydanticObjectId
 
 task_router = APIRouter()
