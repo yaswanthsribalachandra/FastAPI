@@ -3,6 +3,7 @@ from fastapi.responses import HTMLResponse
 from employees import employeerouter
 from books import booksrouter
 from health import healthrouter
+from crud import task_router
 
 
 app = FastAPI(
@@ -14,3 +15,4 @@ app = FastAPI(
 app.include_router(employeerouter)
 app.include_router(booksrouter)
 app.include_router(healthrouter)
+app.include_router(task_router)
