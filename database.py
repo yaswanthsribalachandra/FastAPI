@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List
 from motor.motor_asyncio import AsyncIOMotorClient
 from beanie import init_beanie
-from models import Task
+from schema import Task
 
 employees = [
     {"id": 1, "name": "Alice", "age": 30, "position": "Software Engineer", "salary": 80000},
