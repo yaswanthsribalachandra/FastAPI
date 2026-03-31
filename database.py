@@ -13,7 +13,7 @@ employees = [
 ]
 
 
-MONGO_URL = "mongodb+srv://yaswanth:yaswanth12345@cluster1.sxnfzju.mongodb.net/tasks?retryWrites=true&w=majority"
+MONGO_URL = "mongodb+srv://yaswanth:12345@cluster1.sxnfzju.mongodb.net/tasks?retryWrites=true&w=majority"
 
 client = AsyncIOMotorClient(MONGO_URL)
 
