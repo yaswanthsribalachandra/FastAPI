@@ -5,6 +5,7 @@ from beanie import PydanticObjectId
 
 task_router = APIRouter()
 
+#task router 
 
 @task_router.get("/tasks", response_model=List[Task])
 async def get_all_tasks():
@@ -56,3 +57,4 @@ async def delete_task(task_id: PydanticObjectId):
     
     # If not found → error
     raise HTTPException(status_code=404, detail="Task not found")
+
